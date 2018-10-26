@@ -1,0 +1,43 @@
+<body>
+    <div class="container">
+        <fieldset >
+            <legend>Item Details</legend>
+            <div class="form-group">
+                <label for="">Category</label>
+                <input type="text" #ProductCategory placeholder="Enter the Category" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Brand</label>
+                <input type="text" #ProductBrand placeholder="Enter the Brand" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" #ProductName placeholder="Enter the Name" id="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Quantity</label>
+                <input type="text" #ProductQuantity placeholder="Enter the Quantity" id="Quantity" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Price</label>
+                <input type="text" #ProductPrice id="price" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">ImageUrl</label>
+                <input type="text" #ProductImg placeholder="Enter the Url" id="url" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="">Desc</label>
+                <textarea id="desc" #ProductInfo class="form-control" placeholder="Enter the description" cols="30" rows="10"></textarea >
+            </div>
+            
+
+            <div class="form-group">
+                <button id="add" (click)='AddProduct(ProductCategory.value,ProductBrand.value,ProductName.value,ProductQuantity.value,ProductPrice.value,ProductImg.value,ProductInfo.value)' class="btn btn-primary">Add</button>
+                
+            </div>
+        </fieldset>
+        
+    </div>
+    
+</body>

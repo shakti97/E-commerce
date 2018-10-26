@@ -1,0 +1,36 @@
+<div class="modal-dialog" >
+    <div class="modal-content ">
+       <div class="modal-header">
+         <h3>Update</h3>
+       </div>
+       <div class="modal-body">
+           
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" #ProductNames value={{ProductName}} placeholder="Enter the Brand" id="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Quantity</label>
+            <input type="text" #ProductQuantitys value={{ProductQuantity}} placeholder="Enter the Brand" id="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Price</label>
+            <input type="text" #ProductPrices value={{ProductPrice}} placeholder="Enter the Brand" id="name" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">ImageUrl</label>
+            <input type="text" #ProductImg value={{ProductImage}} placeholder="Enter the Url" id="url" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Desc</label>
+            <textarea id="desc" #ProductInfo class="form-control" value={{ProductDescription}} placeholder="Enter the description" cols="30" rows="10"></textarea >
+        </div>
+        
+
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-primary" (click)="UpdateProductDetails(ProductNames.value,ProductQuantitys.value,ProductPrices.value,ProductImg.value,ProductInfo.value)">Update</button>
+         <button type="button" class="btn btn-default" (click)="close()" >Cancel</button>
+       </div>
+     </div>
+  </div>

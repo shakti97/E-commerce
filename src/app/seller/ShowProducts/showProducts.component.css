@@ -1,0 +1,11 @@
+table{
+    padding: 5px!important;
+}
+thead{
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+}
+tbody{
+    background-color: cornsilk;
+}
